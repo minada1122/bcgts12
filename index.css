@@ -184,6 +184,12 @@ slider1 {
 
 
 /*---------------------------------------------------note-----------------------------------------------------------------*/
+.clv {
+  background:url(desktop1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
 
 .note-card {
   background-color: #1e293b;
@@ -192,6 +198,7 @@ slider1 {
   padding: 30px;
   width: 500px;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  animation: floatCard 2s ease-in-out infinite alternate;
 }
 
 .note-card h3 {
@@ -218,6 +225,21 @@ slider1 {
 .note-card:hover {
             transform: scale(1.05);
         }
+
+
+
+
+/* Animation uda yata */
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2);
+  }
+}
 
 /*---------------------------------------------------note end--------------------------------------------------------------*/
 
@@ -292,12 +314,13 @@ univer {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  animation: floatCard 2s ease-in-out infinite alternate;
 }
 
 .universe {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
 
 .galaxy-image {
@@ -313,22 +336,15 @@ univer {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120%;
-  height: 120%;
+  width: 80%;
+  height: 85%;
   transform: translate(-50%, -50%);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 5px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   animation: pulse 2s infinite;
   z-index: 1;
 }
 
-/* Orbit rings */
-.orbit {
-  position: absolute;
-  border: 1px dashed rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  animation: rotate linear infinite;
-}
 
 .orbit1 {
   width: 120%;
@@ -384,7 +400,23 @@ univer {
   }
 }
 
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2);
+  }
+}
 /*------------------------------------------------------------universe end-------------------------------------------------*/
 
 
 
+ .rrff {
+  background:url(desktop1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  animation: floatCard 2s ease-in-out infinite alternate;
